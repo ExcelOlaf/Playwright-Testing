@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import test from '@playwright/test';
+import { expect } from '@playwright/test';
 
 test('homepage shows popular movies', async ({ page }) => {
   await page.goto('https://debs-obrien.github.io/playwright-movies-app');
