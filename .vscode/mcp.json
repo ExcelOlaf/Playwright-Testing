@@ -1,10 +1,18 @@
 {
-    "servers": {
-        "playwright": {
-            "command": "npx",
-            "args": [
-                "@playwright/mcp@latest"
-            ]
-        }
+  "servers": {
+    "playwright": {
+      "command": "wsl",
+      "args": [
+        "-d",
+        "Ubuntu",
+        "npx",
+        "@playwright/mcp@latest"
+      ]
+    },
+    "internal-agent": {
+      "command": "streamlit",
+      "args": ["run", "chat.py"]
     }
+  }
 }
+
